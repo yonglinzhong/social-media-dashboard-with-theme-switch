@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "facebook",
+      "username": "@nathanf",
+      "followers": 1987,
+      "change": ["up", 12]
+    },
+    {
+      "name": "twitter",
+      "username": "@nathanf",
+      "followers": 1044,
+      "change": ["up", 99]
+    },
+    {
+      "name": "instagram",
+      "username": "@nathanf",
+      "followers": "11k",
+      "change": ["up", 1099]
+    },
+    {
+      "name": "youtube",
+      "username": "@nathanf",
+      "followers": 8239,
+      "change": ["down", 144]
+    }
+  ]
+}
