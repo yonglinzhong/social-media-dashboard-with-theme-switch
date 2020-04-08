@@ -8,7 +8,10 @@ const { default: fileExistsCaseInsensitive } = require('react-styleguidist/lib/s
 
 module.exports = {
   assetsDir: 'styleguide',
-  require: [path.join(__dirname, 'styleguide/static/styleguide.css')],
+  require: [
+    path.join(__dirname, 'public/static/styles/app.css'),
+    path.join(__dirname, 'styleguide/static/styleguide.css'),
+  ],
   getExampleFilename(componentPath) {
     const parsedPath = path.parse(componentPath);
     const parentDirName = parsedPath.dir.split('components/')[1] || '';
@@ -35,26 +38,6 @@ module.exports = {
       content: 'styleguide/pages/typography.md',
       components: 'src/components/common/Text.js',
     },
-    // {
-    //   name: 'Atoms',
-    //   components: 'components/Styled*.js',
-    //   description: 'Base design atoms.',
-    //   sectionDepth: 1,
-    // },
-    // {
-    //   name: 'Grid',
-    //   content: 'styleguide/pages/Grid.md',
-    //   sections: [
-    //     {
-    //       name: 'Box',
-    //       content: 'styleguide/examples/Box.md',
-    //     },
-    //     {
-    //       name: 'Flex',
-    //       content: 'styleguide/examples/Flex.md',
-    //     },
-    //   ],
-    // },
     {
       name: 'Master components',
       content: 'styleguide/pages/UI.md',
@@ -62,32 +45,11 @@ module.exports = {
       ignore: ['src/components/Contribute*.js', 'src/components/Styled*.js'],
       sectionDepth: 1,
     },
-    // {
-    //   name: 'Projects',
-    //   sectionDepth: 2,
-    //   sections: [
-    //     {
-    //       name: 'Expenses',
-    //       components: 'components/expenses/*.js',
-    //       description: 'Expense flow',
-    //     },
-    //     {
-    //       name: 'Collective Page',
-    //       components: 'components/collective-page/*.js',
-    //       description: 'These components are used collective page.',
-    //     },
-    //     {
-    //       name: 'Contribution Flow',
-    //       components: 'components/contribution-flow/*.js',
-    //       description: 'These components are used on the donate/contribute flow.',
-    //     },
-    //   ],
-    // },
   ],
   skipComponentsWithoutExample: true,
-  // styleguideComponents: {
-  //   Wrapper: path.join(__dirname, 'styleguide/Wrapper'),
-  // },
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, 'styleguide/Wrapper'),
+  },
   styles: {
     Section: {
       fontSize: '14px',
@@ -108,7 +70,7 @@ module.exports = {
     optimization: {
       minimize: false, // See https://github.com/terser/terser/issues/567
     },
-    // plugins: [new CopyPlugin([{ from: 'public/static/fonts', to: 'static/fonts' }])],
+    plugins: [new CopyPlugin([{ from: 'public/static/fonts', to: 'static/fonts' }])],
     module: {
       rules: [
         {

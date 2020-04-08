@@ -2,14 +2,11 @@ The main way to deal with typography is through the components in `src/component
 
 # Typeface & fonts
 
-🎨️ [Figma file](https://www.figma.com/file/jxJfC29te8i1C8qMReth95/%5BDS%5D-01-Typography?node-id=9%3A10)
-
-The main font on Open Collective is [Inter](https://rsms.me/inter/). The colors can vary from `black.50` to `black.900` (the darkest).
+The main font is [Inter](https://rsms.me/inter/). The colors can vary from `black.50` to `black.900` (the darkest).
 
 ```jsx
 import { P } from '../../src/components/common/Text';
 <div>
-  <P color='black.50'>50: We are on a mission to help collaborative groups collect and spend money transparently.</P>
   <P color='black.100'>100: We are on a mission to help collaborative groups collect and spend money transparently.</P>
   <P color='black.200'>200: We are on a mission to help collaborative groups collect and spend money transparently.</P>
   <P color='black.300'>300: We are on a mission to help collaborative groups collect and spend money transparently.</P>
