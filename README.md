@@ -30,5 +30,4 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Design
-![Light Theme](./design/active-states-light.jpg)
-![Dark Theme](./design/active-states-dark.jpg)
+![Design](./design/desktop-preview.jpg)

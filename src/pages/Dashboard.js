@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SocialMediaCard from '../components/SocialMediaCard';
 import AnalyticsCard from '../components/AnalyticsCard';
-import { H3, P } from '../components/common/Text';
+import { H3, P, Span } from '../components/common/Text';
 
 import { Flex, Box } from 'rebass';
 import { Switch } from '@rebass/forms';
@@ -34,6 +34,20 @@ const StyledHeading = styled(H3)`
 const StyledSubcap = styled(P)`
   color: ${themeGet('colors.secondaryText')};
   font-weight: bold;
+`;
+
+const ModeLabel = styled(Span)`
+  color: ${themeGet('colors.secondaryText')};
+  font-weight: bold;
+`;
+
+const ModeSwitch = styled(Switch)`
+  background: ${themeGet('colors.switchBackground')} !important;
+  border-color: ${themeGet('colors.switchBackground')} !important;
+
+  :focus {
+    box-shadow: none !important;
+  }
 `;
 
 const OverviewHeading = styled(H3)`
@@ -105,7 +119,10 @@ class Dashboard extends Component {
             <StyledSubcap>Total Followers: 2,304</StyledSubcap>
           </Box>
           <Box as='form'>
-            <Switch id='mode' name='name' checked={this.state.mode} onClick={this.handleSwitchChange} />
+            <Flex alignItems='center'>
+              {this.state.mode ? <ModeLabel mr={2}>Dark Mode</ModeLabel> : <ModeLabel mr={2}>Light Mode</ModeLabel>}
+              <ModeSwitch id='mode' name='name' checked={this.state.mode} onClick={this.handleSwitchChange} />
+            </Flex>
           </Box>
         </Flex>
 

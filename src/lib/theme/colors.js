@@ -3,16 +3,16 @@
  */
 
 const BrandColors = {
-  900: '#1B5E20',
-  800: '#2E7D32',
-  700: '#388E3C',
-  600: '#43A047',
-  500: '#4CAF50',
-  400: '#66BB6A',
-  300: '#81C784',
-  200: '#A5D6A7',
-  100: '#C8E6C9',
-  50: '#C8E6C9',
+  900: 'hsl(163, 72%, 41%)',
+  800: 'hsl(163, 72%, 41%)',
+  700: 'hsl(163, 72%, 41%)',
+  600: 'hsl(163, 72%, 41%)',
+  500: 'hsl(163, 72%, 41%)',
+  400: 'hsl(163, 72%, 41%)',
+  300: 'hsl(163, 72%, 41%)',
+  200: 'hsl(163, 72%, 41%)',
+  100: 'hsl(163, 72%, 41%)',
+  50: 'hsl(163, 72%, 41%)',
 };
 
 const defaultColors = {
@@ -95,6 +95,7 @@ const defaultColors = {
       primaryText: 'hsl(230, 17%, 14%)',
       secondaryText: 'hsl(228, 12%, 44%)',
       hoverBackground: 'rgb(225, 227, 240)',
+      switchBackground: '	#aeb3cb',
     },
     dark: {
       bodyBackground: 'hsl(230, 17%, 14%)',
@@ -103,6 +104,7 @@ const defaultColors = {
       primaryText: 'hsl(0, 0%, 100%)',
       secondaryText: 'hsl(228, 34%, 66%)',
       hoverBackground: 'rgb(51	58	86)',
+      switchBackground: 'linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%)',
     },
   },
 };
