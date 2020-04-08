@@ -1,4 +1,4 @@
-This project was based on the project idea from [Frontend Mentor](https://www.frontendmentor.io) and bootstrapped with Create React App. The goal is to build a social media dashboard with a light/dark theme toggle ability. To achieve this feature, the project has been used [styled-system](https://styled-system.com) and [style-component](https://styled-components.com) to control the styles basing on different global themes that has been configured.
+This project was based on the project idea from [Frontend Mentor](https://www.frontendmentor.io) and bootstrapped with Create React App. The goal is to build a social media dashboard with a light/dark theme toggle ability. To achieve this feature, the project has been used [styled-system](https://styled-system.com) and [style-component](https://styled-components.com) to control the styles basing on different global themes that have been configured.
 
 ## **[Live Demo](https://social-media-dashboard-with-theme-switch.yonglinzhong.now.sh)**
 
