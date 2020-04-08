@@ -29,11 +29,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## `yarn styleguide:build`
+### `yarn styleguide:build`
 
 Builds the style guide for the project with [react-styleguidist](http://react-styleguidist.js.org)
 
-## `yarn styleguide:dev`
+### `yarn styleguide:dev`
 
 Serve the the style guide page under [http://localhost:6060/](http://localhost:6060/)
 
