@@ -1,18 +1,13 @@
-/**
- * Implement the colors from https://www.figma.com/file/1jyGC3MjtqI7uUsGf1447P/DS-03-%2F-Colors?node-id=1146%3A643
- */
-
 const BrandColors = {
-  900: 'hsl(163, 72%, 41%)',
-  800: 'hsl(163, 72%, 41%)',
-  700: 'hsl(163, 72%, 41%)',
-  600: 'hsl(163, 72%, 41%)',
-  500: 'hsl(163, 72%, 41%)',
-  400: 'hsl(163, 72%, 41%)',
-  300: 'hsl(163, 72%, 41%)',
-  200: 'hsl(163, 72%, 41%)',
-  100: 'hsl(163, 72%, 41%)',
-  50: 'hsl(163, 72%, 41%)',
+  900: '#1db489',
+  800: '#3ebb93',
+  700: '#55c29c',
+  600: '#69caa6',
+  500: '#7bd1b0',
+  400: '#8cd8ba',
+  300: '#9ddfc4',
+  200: '#ade6cf',
+  100: '#bdedd9',
 };
 
 const defaultColors = {

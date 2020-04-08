@@ -35,12 +35,12 @@ function AnalyticsCard({ value }) {
       <Flex justifyContent='space-between' alignItems='center' p='3'>
         <CardHeading>{value.count}</CardHeading>
         {value.change[0] === 'up' ? (
-          <Span color='primary.700' fontWeight='bold'>
+          <Span color='primary.900' fontWeight='bold'>
             <Image alt={value.name} src={`./static/icons/icon-${value.change[0]}.svg`} mr='2' />
             {value.change[1]} today
           </Span>
         ) : (
-          <Span color='red.700' fontWeight='bold'>
+          <Span color='red.900' fontWeight='bold'>
             <Image alt={value.name} src={`./static/icons/icon-${value.change[0]}.svg`} mr='2' />
             {value.change[1]} today
           </Span>
