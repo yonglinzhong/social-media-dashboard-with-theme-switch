@@ -68,7 +68,7 @@ class Dashboard extends Component {
     this.handleSwitchChange = this.handleSwitchChange.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const dynamicStyle = () => {
       if (window.matchMedia(`(max-width: ${theme.breakpoints[0]})`).matches) {
         this.setState({
@@ -84,9 +84,7 @@ class Dashboard extends Component {
     dynamicStyle();
 
     window.addEventListener('resize', dynamicStyle.bind(this));
-  }
 
-  componentDidMount() {
     fetch('./data/SocialMedia.json')
       .then((response) => response.json())
       .then((data) => this.setState({ socialMedia: data.data }));
